@@ -1,0 +1,12 @@
+{
+  "template": {
+    "trickcommand2openservicewithoutlink": "minikube service <SERVICE-NAME>",
+    "service-url": "Will be visible after running the above command"
+  },
+  "sample": {
+    "trickcommand2openservicewithoutlink": "minikube service mongo-express-service",
+    "service-url": "http://127.0.0.1:49910/",
+    "first-input": "admin",
+    "second-input": "pass"
+  }
+}
