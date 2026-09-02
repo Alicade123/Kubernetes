@@ -14,27 +14,27 @@ spec:
       labels:
         app: webapp
     spec:
-    containers:
-      - name: webapp
-        image: rancher/k8s:v1.12.10-rancher1-1
-        ports:
-          - containerPort: 3000
-        env:
-          - name: USER_NAME
-            valueFrom:
-              secretKeyRef:
-                name: mongo-secret
-                key: mongo-user
-          - name: USER_PWD
-            valueFrom:
-              secretKeyRef:
-                name: mongo-secret
-                key: mongo-password
-          - name: DB_URL
-            valueFrom:
-              configMapKeyRef:
-                name: mongo-config
-                key: mongo-url
+      containers:
+        - name: webapp
+          image: nanajanashia/k8s-demo-app:v1.0
+          ports:
+            - containerPort: 3000
+          env:
+            - name: USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: mongo-user
+            - name: USER_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: mongo-password
+            - name: DB_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: mongo-config
+                  key: mongo-url
 
 ---
 apiVersion: v1
