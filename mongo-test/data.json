@@ -1,0 +1,11 @@
+
+{
+        "template":{
+            "trickcommand2openservicewithoutlink": "minikube service mongo-express-service",
+            "service-url": "http://127.0.0.1:49910/"
+        },
+       "sample":{
+            "trickcommand2openservicewithoutlink": "minikube service mongo-express-service",
+            "service-url": "http://127.0.0.1:49910/"
+        }
+}
