@@ -1,0 +1,10 @@
+{
+  "template": {
+    "trickcommand2openservicewithoutlink": "minikube service <SERVICE-NAME>",
+    "service-url": "Will be visible after running the above command"
+  },
+  "sample": {
+    "trickcommand2openservicewithoutlink": "minikube service webapp-service",
+    "service-url": "http://127.0.0.1:62578/"
+  }
+}
